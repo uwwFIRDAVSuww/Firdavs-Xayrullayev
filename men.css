@@ -30,3 +30,20 @@
   margin-bottom: 10px;
   line-height: 1.6;
 }
+
+a button {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+a button:hover {
+  background: #297c2d;
+  color: white;
+  box-shadow: #4CAF50 0px 4px 15px;
+  transition: 12px;
+}
