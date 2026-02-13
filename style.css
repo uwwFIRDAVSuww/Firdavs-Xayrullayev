@@ -291,6 +291,7 @@ footer {
 .footer-info p {
   font-size: 1rem;
   color: #fff;
+  margin-right: 50px;
 }
 
 .footer-links a {
