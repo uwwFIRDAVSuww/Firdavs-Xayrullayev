@@ -1,165 +1,407 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfoliyo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firdavs Xayrullaev | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<nav class="navbar">
-  <div class="container">
-    <ul>
-      <li><a href="#about">Men haqimda</a></li>
-      <li><a href="#family">Mening oilam</a></li>
-      <li><a href="#group">Mening guruhim</a></li>
-      <li><a href="#projects">Mening loyihalarim</a></li>
+
+  <!-- Background blobs -->
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <a class="brand" href="#home">Firdavs<span>.</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a class="nav-a" href="#home">Bosh sahifa</a></li>
+      <li><a class="nav-a" href="#family">Oila</a></li>
+      <li><a class="nav-a" href="#team">Guruh</a></li>
+      <li><a class="nav-a" href="#projects">Loyihalar</a></li>
+      <li><a class="nav-a" href="#contact">Bog‘lanish</a></li>
     </ul>
-  </div>
-</nav>
+  </nav>
 
-<header id="about">
-  <div class="header-container">
-    <div class="header-content">
-      <h1>Assalomu alaykum!</h1>
-      <h1>Mening ismim</h1>
-      <h1>Firdavs Xayrullaev</h1>
-      <p>Men PDP Junior Sergeli filialida Frontend <br> yo'nalishida o'qiyman.</p>
-      <a href="men haqimda.html">
-          <button class="header-button">Men haqimda</button>
-      </a>
-    </div>
-    <div class="header-image">
-      <img src="ozim.jpg" alt="Firdavs">
-    </div>
-  </div>
-</header>
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="wrap hero-grid reveal">
+      <div class="hero-left">
+        <p class="kicker">Frontend • PDP Junior Sergeli</p>
+        <h1 class="h1">
+          Assalomu alaykum!<br />
+          Men <span class="grad">Firdavs Xayrullaev</span>
+        </h1>
+        <p class="lead">
+          Men hozir frontend yo‘nalishida o‘qiyman va zamonaviy, responsiv hamda chiroyli web sahifalar
+          yaratishga intilyapman. Maqsadim — real loyihalarda tajriba to‘plash va kuchli developer bo‘lish.
+        </p>
 
-<section id="family">
+        <div class="cta">
+          <a class="btn" href="#projects">Loyihalarim</a>
+          <a class="btn ghost" href="men haqimda.html">Men haqimda</a>
+        </div>
 
-<h2>Mening oilam</h2>
-
-<div class="family-box">
-
-<div class="card">
-<img src="adajonim.jpg">
-<h3>Adajonim</h3>
-<p>IT ga qiziqishimga sababchi bo'lganlar</p>
-</div>
-
-<div class="card">
-<img src="onajonim.jpg">
-<h3>Onajonim</h3>
-<p>Mehribon va doim qo'llab-quvvatlaydilar</p>
-</div>
-
-<div class="card">
-<img src="opam.jpg">
-<h3>Opam</h3>
-<p>Oilamizning quvnoq a'zosi</p>
-</div>
-
-<div class="card">
-<img src="ozim.jpg">
-<h3>Men</h3>
-<p>Frontend developer bo'lish yo'lidaman</p>
-</div>
-
-<div class="card">
-<img src="azizjon.jpg">
-<h3>Ukam</h3>
-<p>Kichkina va sho'x</p>
-</div>
-
-<div class="card">
-<img src="Muhammadrizo.jpg">
-<h3>Ukam</h3>
-<p>Kichkina va sho'x</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section id="group">
-  <div class="container">
-    <h2>Mening guruhim</h2>
-    <div class="team-cards">
-      <div class="team-card">
-        <img src="./odilbek.jpg" alt="Guruh a'zosi 1">
-        <h3>Odilbek</h3>
-        <p>Frontend developer</p>
-      </div>
-      <div class="team-card">
-        <img src="./ubaydullo.jpg" alt="Guruh a'zosi 2">
-        <h3>Ubaydullo</h3>
-        <p>Frontend developer</p>
-      </div>
-      <div class="team-card">
-        <img src="./farruh.jpg" alt="Guruh a'zosi 3">
-        <h3>Farruh</h3>
-        <p>Frontend developer</p>
-      </div>
-      <div class="team-card">
-        <img src="./ustozim.jpg" alt="Guruh a'zosi 4">
-        <h3>ustozim</h3>
-        <p>all</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="container">
-    <h2>Mening loyihalarim</h2>
-    <div class="projects-cards">
-
-      <div class="project-card">
-        <iframe src="https://firdavs-123-three.vercel.app"></iframe>
-        <h3>Loyiha 1</h3>
-        <p>bu yerda html css ishlatilgan</p>
-        <div class="project-links">
-          <a href="https://demo1.link" target="_blank">Demo</a>
-          <a href="https://github.com/uwwFIRDAVSuww/firdavs_" target="_blank">Code</a>
+        <div class="stats">
+          <div class="stat">
+            <b>HTML</b><span>yaxshi</span>
+          </div>
+          <div class="stat">
+            <b>CSS</b><span>o‘rganayapman</span>
+          </div>
+          <div class="stat">
+            <b>Next</b><span>JS → React</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
-        <img src="project2.jpg" alt="Loyiha 2">
-        <h3>Loyiha 2</h3>
-        <p>bu yerda html css javascript ishlatilgan</p>
-        <div class="project-links">
-          <a href="https://demo2.link" target="_blank">Demo</a>
-          <a href="https://github.com/uwwFIRDAVSuww/firdavs-1234" target="_blank">Code</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="project3.jpg" alt="Loyiha 3">
-        <h3>Loyiha 3</h3>
-        <p>bu yerda html css javascript ishlatilgan</p>
-        <div class="project-links">
-          <a href="https://demo3.link" target="_blank">Demo</a>
-          <a href="https://github.com/uwwFIRDAVSuww/firdavs-1234" target="_blank">Code</a>
+      <div class="hero-right">
+        <div class="avatar-card">
+          <img src="ozim.jpg" alt="Firdavs" />
+          <div class="shine"></div>
+          <div class="chips">
+            <span class="chip">Responsive</span>
+            <span class="chip">Flex/Grid</span>
+            <span class="chip">Hover UI</span>
+          </div>
         </div>
       </div>
     </div>
+
+    <a class="scroll" href="#family" aria-label="Scroll down"><span></span></a>
+  </header>
+
+  <!-- FAMILY -->
+<section id="family" class="section">
+  <div class="wrap reveal">
+    <div class="sec-head">
+      <h2>Mening oilam</h2>
+      <p>Har bir a’zo — mening kuchim, mehrim va motivatsiyam.</p>
+    </div>
+
+    <!-- 1) ADAJONIM -->
+    <section class="member reveal" id="adajonim">
+      <div class="member__card">
+        <div class="member__media">
+          <img src="adajonim.jpg" alt="Adajonim">
+          <div class="shine"></div>
+        </div>
+        <div class="member__info">
+          <span class="member__badge">👨‍👧‍👦 Adajonim</span>
+          <h3 class="member__title">Adajonim</h3>
+          <p class="member__text">
+            Men IT’ga qiziqishimga aynan adajonim sababchi bo‘lganlar.
+            Har doim to‘g‘ri yo‘l ko‘rsatib, motivatsiya berib turadilar.
+          </p>
+          <ul class="member__list">
+            <li>✔️ Mas’uliyatli va talabchan</li>
+            <li>✔️ Motivatsiya beradilar</li>
+            <li>✔️ Meni qo‘llab-quvvatlaydilar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2) ONAJONIM (REVERSE) -->
+    <section class="member member--reverse reveal" id="onajonim">
+      <div class="member__card">
+        <div class="member__media">
+          <img src="onajonim.jpg" alt="Onajonim">
+          <div class="shine"></div>
+        </div>
+        <div class="member__info">
+          <span class="member__badge">👩‍❤️‍👦 Onajonim</span>
+          <h3 class="member__title">Onajonim</h3>
+          <p class="member__text">
+            Onajonim — mehribon va sabrli. Har doim meni eshitib, qo‘llab-quvvatlaydilar.
+            Uyimizdagi iliqlikning asosiy sababi ham onajonim.
+          </p>
+          <ul class="member__list">
+            <li>✔️ Mehribon va g‘amxo‘r</li>
+            <li>✔️ Har doim qo‘llab-quvvatlaydi</li>
+            <li>✔️ Uyimizga fayz beradi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) OPAM -->
+    <section class="member reveal" id="opam">
+      <div class="member__card">
+        <div class="member__media">
+          <img src="opam.jpg" alt="Opam">
+          <div class="shine"></div>
+        </div>
+        <div class="member__info">
+          <span class="member__badge">👩 Opam</span>
+          <h3 class="member__title">Opam</h3>
+          <p class="member__text">
+            Opam — oilamizning quvnoq a’zosi. Ular bilan suhbatlashsam kayfiyatim ko‘tariladi.
+            Menga doim yaxshi maslahatlar beradilar.
+          </p>
+          <ul class="member__list">
+            <li>✔️ Quvnoq va samimiy</li>
+            <li>✔️ Maslahat beradi</li>
+            <li>✔️ Oilada birlik yaratadi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4) MEN (REVERSE + HIGHLIGHT) -->
+    <section class="member member--reverse member--highlight reveal" id="men">
+      <div class="member__card">
+        <div class="member__media">
+          <img src="ozim.jpg" alt="Men">
+          <div class="shine"></div>
+        </div>
+        <div class="member__info">
+          <span class="member__badge">🧑‍💻 Men</span>
+          <h3 class="member__title">Firdavs</h3>
+          <p class="member__text">
+            Men frontend yo‘nalishida o‘qiyman. Hozir HTML’ni yaxshi bilaman, CSS’ni kuchaytiryapman.
+            Keyingi rejam: JavaScript va React’ni o‘rganib, real loyihalar qilish.
+          </p>
+          <ul class="member__list">
+            <li>✔️ HTML: yaxshi</li>
+            <li>✔️ CSS: o‘rganayapman</li>
+            <li>✔️ Keyingi bosqich: JS → React</li>
+          </ul>
+
+          <div class="member__actions">
+            <a class="btn small" href="#projects">Loyihalarim</a>
+            <a class="btn small ghost" href="men haqimda.html">Batafsil</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 5) UKAM 1 -->
+    <section class="member reveal" id="ukam1">
+      <div class="member__card">
+        <div class="member__media">
+          <img src="azizjon.jpg" alt="Ukam Azizjon">
+          <div class="shine"></div>
+        </div>
+        <div class="member__info">
+          <span class="member__badge">👦 Ukam</span>
+          <h3 class="member__title">Azizjon</h3>
+          <p class="member__text">
+            Ukam — kichkina va sho‘x. U bilan vaqt o‘tkazish juda maroqli.
+            Oilamizga quvonch olib kiradi.
+          </p>
+          <ul class="member__list">
+            <li>✔️ Quvnoq</li>
+            <li>✔️ Sho‘x</li>
+            <li>✔️ Mehribon</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6) UKAM 2 (REVERSE) -->
+    <section class="member member--reverse reveal" id="ukam2">
+      <div class="member__card">
+        <div class="member__media">
+          <img src="Muhammadrizo.jpg" alt="Ukam Muhammadrizo">
+          <div class="shine"></div>
+        </div>
+        <div class="member__info">
+          <span class="member__badge">👦 Ukam</span>
+          <h3 class="member__title">Muhammadrizo</h3>
+          <p class="member__text">
+            Ukam ham juda qiziquvchan va sho‘x. Ular bilan birga o‘ynab, vaqt qanday o‘tib ketganini sezmayman.
+          </p>
+          <ul class="member__list">
+            <li>✔️ Qiziquvchan</li>
+            <li>✔️ Faol</li>
+            <li>✔️ Oilamizning quvonchi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
   </div>
 </section>
 
-<footer>
-  <div class="container footer-container">
-    <div class="footer-links">
-      <a href="https://t.me/uwwFIRDAVSuww" target="_blank">Telegram</a>
-      <a href="https://github.com/uwwFIRDAVSuww/firdavs-1234" target="_blank">GitHub</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Firdavs Xayrullaev. Barcha huquqlar himoyalangan.</p>
-  </div>
-</footer>
+  <!-- TEAM -->
+  <section id="team" class="section alt">
+    <div class="wrap reveal">
+      <div class="sec-head">
+        <h2>Mening guruhim</h2>
+        <p>Men kuchli va maqsadli guruh bilan birga o‘qiyman.</p>
+      </div>
 
+      <div class="cards team-grid">
+        <article class="tcard">
+          <img src="./odilbek.jpg" alt="Odilbek">
+          <div class="tbody">
+            <h3>Odilbek</h3>
+            <p>Frontend developer</p>
+          </div>
+        </article>
+
+        <article class="tcard">
+          <img src="./ubaydullo.jpg" alt="Ubaydullo">
+          <div class="tbody">
+            <h3>Ubaydullo</h3>
+            <p>Frontend developer</p>
+          </div>
+        </article>
+
+        <article class="tcard">
+          <img src="./farruh.jpg" alt="Farruh">
+          <div class="tbody">
+            <h3>Farruh</h3>
+            <p>Frontend developer</p>
+          </div>
+        </article>
+
+        <article class="tcard">
+          <img src="./ustozim.jpg" alt="Ustozim">
+          <div class="tbody">
+            <h3>Ustozim</h3>
+            <p>Mentor</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="wrap reveal">
+      <div class="sec-head">
+        <h2>Mening loyihalarim</h2>
+        <p>Demo + kod linklarini joylab boraman. Har bir loyiha — tajribamning isboti.</p>
+      </div>
+
+      <div class="cards proj-grid">
+
+        <article class="pcard">
+          <div class="pmedia iframe">
+            <iframe src="https://firdavs-123-three.vercel.app" title="Project 1"></iframe>
+          </div>
+          <div class="pbody">
+            <h3>Loyiha 1</h3>
+            <p>HTML + CSS asosida tayyorlangan responsiv loyiha.</p>
+            <div class="ptags">
+              <span>HTML</span><span>CSS</span><span>Responsive</span>
+            </div>
+            <div class="plinks">
+              <a class="btn small" href="https://demo1.link" target="_blank">Demo</a>
+              <a class="btn small ghost" href="https://github.com/uwwFIRDAVSuww/firdavs_" target="_blank">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pmedia">
+            <img src="project2.jpg" alt="Loyiha 2">
+          </div>
+          <div class="pbody">
+            <h3>Loyiha 2</h3>
+            <p>HTML + CSS (+ keyin JS qo‘shaman) formatidagi loyiha.</p>
+            <div class="ptags">
+              <span>HTML</span><span>CSS</span><span>UI</span>
+            </div>
+            <div class="plinks">
+              <a class="btn small" href="https://demo2.link" target="_blank">Demo</a>
+              <a class="btn small ghost" href="https://github.com/uwwFIRDAVSuww/firdavs-1234" target="_blank">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pmedia">
+            <img src="project3.jpg" alt="Loyiha 3">
+          </div>
+          <div class="pbody">
+            <h3>Loyiha 3</h3>
+            <p>Keyingi reja: JS bilan interaktiv qilish, so‘ng React’ga o‘tish.</p>
+            <div class="ptags">
+              <span>Plan</span><span>JavaScript</span><span>React</span>
+            </div>
+            <div class="plinks">
+              <a class="btn small" href="https://demo3.link" target="_blank">Demo</a>
+              <a class="btn small ghost" href="https://github.com/uwwFIRDAVSuww/firdavs-1234" target="_blank">Code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section><!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="wrap reveal">
+      <div class="sec-head">
+        <h2>Bog‘lanish</h2>
+        <p>Agar hamkorlik yoki savol bo‘lsa, bemalol yozing.</p>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="https://t.me/uwwFIRDAVSuww" target="_blank">
+          <b>Telegram</b>
+          <span>@uwwFIRDAVSuww</span>
+        </a>
+
+        <a class="contact-card" href="https://github.com/uwwFIRDAVSuww/firdavs-1234" target="_blank">
+          <b>GitHub</b>
+          <span>Profil + kodlar</span>
+        </a>
+
+        <div class="contact-card passive">
+          <b>Reja</b>
+          <span>JS → React → real projectlar</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap foot">
+      <p>© 2026 Firdavs Xayrullaev. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <script>
+    // mobile nav
+    const navToggle = document.getElementById("navToggle");
+    const navLinks = document.getElementById("navLinks");
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      navToggle.classList.toggle("open");
+    });
+
+    // reveal on scroll
+    const items = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add("visible");
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    items.forEach(el => io.observe(el));
+
+    // navbar shadow
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("scrolled", window.scrollY > 10);
+    });
+  </script>
 
 </body>
 </html>
