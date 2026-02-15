@@ -91,19 +91,45 @@ button:hover {
   transition: 12px;
 }
 
-h1 {
-  text-align: center;
-  margin: 40px 0 20px;
-  color: #333;
+#family {
+text-align:center;
+padding:50px;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
-  align-items: stretch; 
+.family-box{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
 }
+
+.card{
+width:220px;
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.card p{
+padding:10px;
+}
+
 
 .card {
   background: #fff;
